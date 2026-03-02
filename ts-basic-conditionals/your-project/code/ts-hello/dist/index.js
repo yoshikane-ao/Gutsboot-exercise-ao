@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const score = 50;
-if (score <= 60) {
+//一問目
+const score = 70;
+if (score >= 60) {
     console.log("pass");
 }
 else {
@@ -10,12 +11,13 @@ else {
 //二問目
 const age = 27;
 const isweekend = true;
-if (age >= 20 && isweekend) {
+if (age >= 20 && isweekend === true) {
     console.log("You can drink");
 }
 else {
     console.log("You cannot drink");
 }
+//三問目
 const ismember = true;
 const hascoupon = true;
 if (ismember || hascoupon) {

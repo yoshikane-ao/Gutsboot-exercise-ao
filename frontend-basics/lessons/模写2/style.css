@@ -59,9 +59,60 @@ nav {
     width: 300px;
 }
 
-.news-list {
+.news-list dl {
     display: flex;
     flex-wrap: wrap;
     border-top: solid 1px #c8c8c8;
     margin-bottom: 20px;
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;    
+}
+
+.news-list dt {
+    /* width: 20%; */
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+}
+
+.news-list dd {
+    width: 80%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+}
+
+#contact {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+#contact dt {
+    width: 10%;
+}
+
+#contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#contact dd input {
+    width: 100%;
+    border: solid 1px #c8c8c8;
+    padding: 10px;
+}
+
+#contact dd {
+    width: 85%;
+}
+
+.massage {
+    height: 10rem;
+}
+
+.form-label {
+    padding-right: 32px;
 }

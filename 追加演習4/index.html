@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sample3</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <script>
+            function buttonClick() {
+                console.log("buttonClick")
+                for (i = 0; i < 4; i++) {
+                    if(
+                        document.getElementById("bank" + i).value != null &&
+                        document.getElementById("bank" + i).value != ""
+                    ) {
+                        bank[i] += Number(
+                            document.getElementById("bank" + i).value
+                        );
+                        document.getElementById("a" + i).textContent = bank[i];
+                    }
+                }
+            }
+            var bank = new Array(4);
+            for (i = 0; i < 4; i++) {
+                document.write(
+                    i + '<input type="text" id="bank' + i + '""><br>'
+                );
+                bank[i] = 0;
+            }
+        </script>
+        <p>
+            <input type="button" value="button" onclick="buttonClick()" /><br />
+        </p>
+        0君
+        <p id="a0">0</p>
+        1君
+        <p id="a1">0</p>
+        2君
+        <p id="a2">0</p>
+        3君
+        <p id="a3">0</p>
+    </body>
+</html>

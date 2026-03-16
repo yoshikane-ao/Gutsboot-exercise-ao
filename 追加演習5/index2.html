@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sample3</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <script>
+            function bmiCalculation() {
+                var Height = Number(document.getElementById("height").value);
+                var Weight = Number(document.getElementById("weight").value);
+                var BMI = Weight / (Height * Height) * 100;
+                alert(BMI);
+            }
+        </script>
+        身長:<input type="text" id="height" />m
+        体重:<input type="text" id="weight"/>kg
+
+        <input type="button" value="button" onclick="bmiCalculation()" /><br />
+    </body>
+</html>
